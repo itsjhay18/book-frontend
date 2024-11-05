@@ -1,0 +1,358 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+/* RESET */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+ol,
+p,
+blockquote,
+table,
+tr,
+td,
+form {
+    margin: 0;
+    padding: 0;
+    font-family: montserrat, sans-serif;
+}
+
+/* END RESET */
+body {
+    font-family: monseratt, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Hide scrollbar for WebKit browsers (Chrome, Safari, Edge) */
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for Firefox */
+body {
+    scrollbar-width: none; /* For Firefox */
+}
+
+/* Add a universal selector to target all elements */
+* {
+    scrollbar-width: none; /* Firefox */
+}
+
+*::-webkit-scrollbar {
+    display: none; /* WebKit browsers */
+}
+
+
+#header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: #03ab17;
+    height: 100px;
+}
+
+.wrapper {
+    width: 90%;
+    margin: auto;
+}
+
+h1 {
+    color: #fff;
+    font-family: montserrat, sans-serif;
+    padding: 0.5em 0;
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 1.8em;
+    line-height: 2em;
+}
+
+h3 {
+    margin-top: 10px;
+    font-size: 1.4em;
+    line-height: 1.8em;
+    font-weight: 300;
+}
+
+p {
+    margin: 1em 0;
+    font-weight: 300;
+    line-height: 1.5em;
+}
+
+.addinfo {
+    line-height: 1.8em;
+    padding-right: 20px;
+    font-weight: 300;
+}
+
+.headline {
+    text-align: center;
+    font-size: 2em;
+    font-weight: 300;
+}
+
+.btnContainer {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btnPrimary {
+    text-decoration: none;
+    font-size: 1.3em;
+    font-family: montserrat, sans sans-serif;
+    color: #fff;
+    background: #003be5;
+    border: 1px solid #0632b2;
+    border-radius: 10px;
+    padding: 0.5em 0.8em;
+    margin: 20px 0;
+    display: inline-block;
+}
+
+.btnPrimary:hover {
+    background: #1851f6;
+}
+
+.table-container {
+    max-height: 510px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+table {
+    text-align: center;
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px 0;
+}
+
+th {
+    padding: 10px 15px;
+    text-align: center;
+    border: 1px solid #dddddd;
+    background: #e3e3e3;
+    line-height: 2em;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+tr {
+    line-height: 1.5em;
+    border-bottom: 1px solid #E3E3E3;
+}
+
+td {
+    max-width: 150px;
+    padding: 0.5em 1em;
+    font-weight: 300;
+}
+
+.btnRegular,
+.btnEdit,
+.btnDelete {
+    text-decoration: none;
+    line-height: 2em;
+    border-radius: 10px;
+    display: inline-block;
+    font-family: montserrat, sans-serif;
+    font-size: 0.95em;
+    font-weight: 400;
+    cursor: pointer;
+    padding: 0 10px;
+}
+
+.btnRegular {
+    background: #e7e7e7;
+    border: 1px solid #d3d3d3;
+}
+
+.btnEdit {
+    background: #fff;
+    border: 1px solid #08b545;
+}
+
+.btnDelete {
+    background: #ee0000;
+    border: 1px solid #c10404;
+    color: #fff;
+}
+
+.btnRegular a,
+.btnEdit a,
+.btnDelete a {
+    padding: 10px 0;
+    text-decoration: none;
+}
+
+.btnRegular a {
+    color: #000
+}
+
+.btnEdit a {
+    color: #000
+}
+
+.btnDelete a {
+    color: #fff;
+}
+
+.block {
+    display: block;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.head {
+    margin: 70px auto;
+    text-align: center; 
+}
+
+.head2 {
+    display: flex;
+    justify-content: center;
+}
+
+.head2 form input {
+    margin-bottom: 5px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.block-1-2,
+.block-2-2 {
+    width: 50%;
+    float: left;
+}
+
+label {
+    display: inline-block;
+    line-height: 3em;
+    font-size: 1em;
+}
+
+input[type="text"],
+textarea {
+    display: block;
+}
+
+input[type="text"] {
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    line-height: 2em;
+    font-size: 1.2em;
+    outline: none;
+    padding: 0 10px;
+}
+
+.textbox-1 {
+    width: 90%;
+}
+
+.textbox-2 {
+    width: 80%;
+}
+
+textarea {
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    outline: none;
+    padding: 10px;
+    width: 95%;
+    font-size: 1.2em;
+    font-family: montserrat, sans-serif;
+    height: 200px;
+    overflow: auto;
+}
+
+.controls {
+    clear: both;
+    float: right;
+    margin: 50px 0;
+}
+
+.alert {
+    display: block;
+    text-align: center;
+    padding: 10px 30px;
+    background: #ffcb4c;
+    border-radius: 3px;
+}
+
+.title {
+    font-size: 3em;
+    line-height: 1em;
+    margin: 40px 0 0;
+    text-transform: uppercase;
+}
+
+.subtitle {
+    font-size: 2em;
+    margin-top: 0;
+    text-transform: uppercase;
+}
+
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.book-details {
+    max-width: 1000px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    position: relative;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.footer-content p {
+    margin: 0;
+}
+
+.socials {
+    list-style-type: none;
+    padding: 0;
+}
+
+.socials li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.socials a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px; /* Adjust icon size here */
+}
+
+.socials i {
+    font-size: medium;
+}
+.socials a:hover {
+    color: #f0f0f0; /* Change color on hover */
+}
